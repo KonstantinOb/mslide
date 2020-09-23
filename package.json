@@ -1,0 +1,19 @@
+{
+  "name": "mslider",
+  "version": "1.0.0",
+  "description": "Slider",
+  "main": "mslide.js",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "tsc": "npx tsc ./src/mslide.ts --outDir dist"
+  },
+  "keywords": [
+    "Slider",
+    "Img"
+  ],
+  "author": "KO",
+  "license": "ISC"
+}
