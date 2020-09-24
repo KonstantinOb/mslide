@@ -1,5 +1,5 @@
 # Simple slider 100% width
-<plaintext> 
+<xmp>
 <body>
         <div class="main-slide">
             <img src="yourImg-1.jpg">
@@ -8,4 +8,4 @@
         </div>
 <script src="mslide.js"></script>
 </body>
-</plaintext> 
+</xmp>
