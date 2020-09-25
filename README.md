@@ -1,4 +1,7 @@
 # Simple slider 100% width
+&lt;head&lt;<br />
+&lt;link rel="stylesheet" href="mslide.css"&lt;</br>
+&lt;/head&gt;<br />
 &lt;body&gt;<br />
         &lt;div class="main-slide"&gt;<br />
             &lt;img src="yourImg-1.jpg"&gt;<br />
