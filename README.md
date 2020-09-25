@@ -1,4 +1,4 @@
-# Simple slider 100% width
+# Simple vanilla slider 100% width
 &lt;head&gt;<br />
 &lt;link rel="stylesheet" href="mslide.css"&gt;</br>
 &lt;/head&gt;<br />
