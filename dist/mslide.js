@@ -84,9 +84,6 @@ var lBtn = function (elem) {
     preImg = listOfImg[iPreImg];
     mainImg = listOfImg[iMainImg];
     nextImg = listOfImg[iNextImg];
-    console.log('iPreImg - ' + iPreImg);
-    console.log('iMainImg - ' + iMainImg);
-    console.log('iNextImg - ' + iNextImg);
     document.getElementById('preImg').style.transition = 'opacity 0.5s';
     document.getElementById('preImg').style.opacity = '1';
     colorBalls();
@@ -128,9 +125,6 @@ var rBtn = function (elem) {
     nextImg = listOfImg[iNextImg];
     mainImg = listOfImg[iMainImg];
     preImg = listOfImg[iPreImg];
-    console.log('iPreImg - ' + iPreImg);
-    console.log('iMainImg - ' + iMainImg);
-    console.log('iNextImg - ' + iNextImg);
     document.getElementById('nextImg').style.transition = 'opacity 0.5s';
     document.getElementById('nextImg').style.opacity = '1';
     colorBalls();
@@ -170,13 +164,10 @@ var timerSlide = function () {
     nextImg = listOfImg[iNextImg];
     mainImg = listOfImg[iMainImg];
     preImg = listOfImg[iPreImg];
-    console.log('iPreImg - ' + iPreImg);
-    console.log('iMainImg - ' + iMainImg);
-    console.log('iNextImg - ' + iNextImg);
     document.getElementById('nextImg').style.transition = 'opacity 0.5s';
     document.getElementById('nextImg').style.opacity = '1';
     colorBalls();
     setTimeout(timerSlideAfter, 500);
 };
-nodeOfSlider.innerHTML = "<div class=\"gmain-slide\">\n<div id=\"sliders-box\">\n<div style=\"background-image: url(" + preImg + ");\" class=\"slide-img hide-img\" id=\"preImg\"></div>\n<div style=\"background-image: url(" + mainImg + ");\" class=\"slide-img\" id=\"MImg\"></div>\n<div style=\"background-image: url(" + nextImg + ");\" class=\"slide-img hide-img\" id=\"nextImg\"></div>\n</div>  \n<div class=\"left-slide\">\n    <button class=\"slide-btn\" onclick=\"lBtn(this);\"><div class=\"lArr\"></div></button>\n</div>\n<div class=\"right-slide\">\n    <button class=\"slide-btn\" onclick=\"rBtn(this);\"><div class=\"rArr\"></button>\n</div>\n<div class=\"ctrl-slide\">\n    " + listOfBalls + "\n</div>\n</div>";
+nodeOfSlider.innerHTML = "<div class=\"gmain-slide\">\n<div id=\"sliders-box\">\n<div style=\"background-image: url(" + preImg + ");\" class=\"slide-img hide-img\" id=\"preImg\"></div>\n<div style=\"background-image: url(" + mainImg + ");\" class=\"slide-img\" id=\"MImg\"></div>\n<div style=\"background-image: url(" + nextImg + ");\" class=\"slide-img hide-img\" id=\"nextImg\"></div>\n</div>  \n<div class=\"left-slide\">\n    <button class=\"slide-btn\" onclick=\"lBtn(this);\"><div class=\"lArr\"></div></button>\n</div>\n<div class=\"right-slide\">\n    <button class=\"slide-btn\" onclick=\"rBtn(this);\"><div class=\"rArr\"></div></button>\n</div>\n<div class=\"ctrl-slide\">\n    " + listOfBalls + "\n</div>\n</div>";
 var timeOfSlide = setInterval(timerSlide, 4000);

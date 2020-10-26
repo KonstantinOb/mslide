@@ -87,9 +87,6 @@ const lBtn = (elem: Element): void => {
     preImg = listOfImg[iPreImg];
     mainImg = listOfImg[iMainImg];
     nextImg = listOfImg[iNextImg];
-    console.log('iPreImg - ' + iPreImg);
-    console.log('iMainImg - ' + iMainImg);
-    console.log('iNextImg - ' + iNextImg);
     document.getElementById('preImg').style.transition = 'opacity 0.5s';
     document.getElementById('preImg').style.opacity = '1';
     colorBalls();
@@ -131,9 +128,6 @@ const rBtn = (elem: Element): void => {
     nextImg = listOfImg[iNextImg];
     mainImg = listOfImg[iMainImg];
     preImg = listOfImg[iPreImg];
-    console.log('iPreImg - ' + iPreImg);
-    console.log('iMainImg - ' + iMainImg);
-    console.log('iNextImg - ' + iNextImg);
     document.getElementById('nextImg').style.transition = 'opacity 0.5s';
     document.getElementById('nextImg').style.opacity = '1';
     colorBalls();
@@ -173,9 +167,6 @@ const timerSlide = (): void => {
     nextImg = listOfImg[iNextImg];
     mainImg = listOfImg[iMainImg];
     preImg = listOfImg[iPreImg];
-    console.log('iPreImg - ' + iPreImg);
-    console.log('iMainImg - ' + iMainImg);
-    console.log('iNextImg - ' + iNextImg);
     document.getElementById('nextImg').style.transition = 'opacity 0.5s';
     document.getElementById('nextImg').style.opacity = '1';
     colorBalls();
