@@ -188,4 +188,8 @@ nodeOfSlider.innerHTML = `<div class="gmain-slide">
     ${listOfBalls}
 </div>
 </div>`;
-let timeOfSlide = setInterval(timerSlide, 4000);
+let timeOfSlide:any = setInterval(timerSlide, 4000);
+
+let sliderBlock:any = document.getElementsByClassName('gmain-slide')[0];
+let sliderBlockWidth:number = sliderBlock.offsetWidth;
+sliderBlock.style.height = sliderBlock.offsetWidth / 2 + 'px'; 

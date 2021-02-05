@@ -171,3 +171,6 @@ var timerSlide = function () {
 };
 nodeOfSlider.innerHTML = "<div class=\"gmain-slide\">\n<div id=\"sliders-box\">\n<div style=\"background-image: url(" + preImg + ");\" class=\"slide-img hide-img\" id=\"preImg\"></div>\n<div style=\"background-image: url(" + mainImg + ");\" class=\"slide-img\" id=\"MImg\"></div>\n<div style=\"background-image: url(" + nextImg + ");\" class=\"slide-img hide-img\" id=\"nextImg\"></div>\n</div>  \n<div class=\"left-slide\">\n    <button class=\"slide-btn\" onclick=\"lBtn(this);\"><div class=\"lArr\"></div></button>\n</div>\n<div class=\"right-slide\">\n    <button class=\"slide-btn\" onclick=\"rBtn(this);\"><div class=\"rArr\"></div></button>\n</div>\n<div class=\"ctrl-slide\">\n    " + listOfBalls + "\n</div>\n</div>";
 var timeOfSlide = setInterval(timerSlide, 4000);
+var sliderBlock = document.getElementsByClassName('gmain-slide')[0];
+var sliderBlockWidth = sliderBlock.offsetWidth;
+sliderBlock.style.height = sliderBlock.offsetWidth / 2 + 'px';
